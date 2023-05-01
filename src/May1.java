@@ -1,5 +1,5 @@
 public class May1 {
-    //find the missing number in a series given the actual lenfth
+    //find the missing number in a series given the actual length
     public static void main(String[] args) {
         int arr[] = new int[]{0,1,3};
         int n = 4;
