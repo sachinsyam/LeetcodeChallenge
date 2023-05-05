@@ -1,44 +1,34 @@
 public class May5 {
-  /* Write an algorithm to determine if a number n is happy.
-
-    A happy number is a number defined by the following process:
-
-    Starting with any positive integer, replace the number by the sum of the squares of its digits.
-    Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
-    Those numbers for which this process ends in 1 are happy.
-    Return true if n is a happy number, and false if not.
+    /*
+    Given a binary array nums, return the maximum number of consecutive 1's in the array.
 
 
 
-            Example 1:
+Example 1:
 
-    Input: n = 19
-    Output: true
-    Explanation:
-            12 + 92 = 82
-            82 + 22 = 68
-            62 + 82 = 100
-            12 + 02 + 02 = 1
-    Example 2:
+Input: nums = [1,1,0,1,1,1]
+Output: 3
+Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.
 
-    Input: n = 2
-    Output: false*/
+
+     */
     public static void main(String[] args) {
-        System.out.println(isHappy(19));
+        System.out.println(Solution(new int[]{1,1,0,1,1,1}));
     }
-    public static boolean isHappy(int n) {
-        if(n == 1 || n == 7){ // 7 is a happy number
-            return true;
+    static int Solution(int nums[]){
+        int count = 0;
+        int maxCount = 0;
+        for (int i = 0; i < nums.length ; i++) {
+            if(nums[i] == 1){
+                count++;
+                if(count > maxCount){
+                    maxCount = count;
+                }
+            }
+            else{
+                count=0;
+            }
         }
-        if(n < 10){ // A single-digit number that is not 1 or 7 cannot be happy
-            return false;
-        }
-        String s = Integer.toString(n);
-        int sum = 0;
-        for (int i = 0; i < s.length(); i++) {
-            int digit = s.charAt(i) - '0'; // Convert char to int value
-            sum += digit * digit;
-        }
-        return isHappy(sum);
+        return maxCount;
     }
 }
