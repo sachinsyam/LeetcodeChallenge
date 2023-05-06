@@ -1,3 +1,5 @@
+package May;
+
 public class May1 {
     //find the missing number in a series given the actual length
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package Apr;
+
 public class Apr29 {
     //https://leetcode.com/problems/minimum-average-difference/
   /*  You are given a 0-indexed integer array nums of length n.

@@ -1,3 +1,5 @@
+package May;
+
 public class May2 {
     //input 123
     //output 123123

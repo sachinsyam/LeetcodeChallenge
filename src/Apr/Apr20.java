@@ -1,4 +1,4 @@
-//Write a function that takes two arrays of integers and returns a new array that contains only the elements that appear in both arrays.
+package Apr;//Write a function that takes two arrays of integers and returns a new array that contains only the elements that appear in both arrays.
 
 public class Apr20 {
     public static void main(String[] args) {
