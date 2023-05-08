@@ -25,9 +25,10 @@ public class May8 {
                     break;
                 }
             }
-            if(flag == false){
-                if(!res1.contains(nums1[i]))
-                res1.add(nums1[i]);
+            if(!flag){
+                if(!res1.contains(nums1[i])) {
+                    res1.add(nums1[i]);
+                }
             }
 
             flag = false;
@@ -45,9 +46,10 @@ public class May8 {
                     break;
                 }
             }
-            if(flag == false){
-                if(!res2.contains(nums2[i]))
-                res2.add(nums2[i]);
+            if(!flag){
+                if(!res2.contains(nums2[i])) {
+                    res2.add(nums2[i]);
+                }
             }
 
             flag = false;
