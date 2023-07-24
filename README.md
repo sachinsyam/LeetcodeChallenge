@@ -1,2 +1,2 @@
-# BCT-TVM-LeetcodeChallenge
-Solutions for questions from BCT leetcode questions
+TVM-LeetcodeChallenge
+Solutions for questions from leetcode questions
